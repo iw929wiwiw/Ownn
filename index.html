@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>KOREZ HUB | Protected Script</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+    }
+    input {
+      width: 250px;
+    }
+    button {
+      background-color: #ff0055;
+      color: white;
+      cursor: pointer;
+    }
+    pre {
+      background: #111;
+      border: 1px solid #444;
+      padding: 15px;
+      margin-top: 20px;
+      white-space: pre-wrap;
+      direction: ltr;
+      text-align: left;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔒 KOREZ HUB Script Protected</h1>
+  <p>ادخل كلمة السر لعرض السكربت:</p>
+  <input type="password" id="password" placeholder="اكتب كلمة السر هنا">
+  <button onclick="checkPassword()">عرض السكربت</button>
+  <pre id="scriptContent" style="display:none;"></pre>
+
+  <script>
+    function checkPassword() {
+      var input = document.getElementById("password").value;
+      var correct = "11320009";
+      var output = document.getElementById("scriptContent");
+      if (input === correct) {
+        output.style.display = "block";
+        output.textContent = `
+getgenv().BrainrotConfig = {
+    ["Garama And Madundung"] = true,
+    ["La Grande Combinasion"] = true,
+    ["Graipuss Medussi"] = true,
+    ["Los Tralaleritos"] = true,
+    ["Sammyni Spyderini"] = true,
+    ["La Vacca Saturno Saturnita"] = true,
+    ["Trenostruzzo Turbo 3000"] = true,
+    ["Matteo"] = true,
+    ["Odin Din Din Dun"] = true,
+    ["Tralalero Tralala"] = true,
+    ["Unclito Samito"] = true,
+    ["Girafa Celestre"] = true,
+    ["Cocofanto Elefanto"] = true
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iw929wiwiw/Secret-Only/refs/heads/main/Secret%20Finder"))();
+        `;
+      } else {
+        alert("❌ كلمة السر غير صحيحة");
+      }
+    }
+  </script>
+</body>
+</html>
